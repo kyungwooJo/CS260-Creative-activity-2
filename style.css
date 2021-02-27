@@ -1,0 +1,222 @@
+body{
+    background-image: url(images/background.jpg);
+    background-repeat: none;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+#imageDate,
+#imageTitle,
+#imageExplanation{
+    width:70%;
+    text-align: center;
+    margin:0 auto;
+    color:white;
+    font-size:12px;
+    margin-bottom: 20px;
+}
+
+#imageExplanation{
+    display: none;
+}
+
+#imageDate,
+#imageTitle{
+    font-size:24px;
+}
+
+
+#apodForm h2,
+#odForm h2,
+#sunsetForm h2
+{
+ text-align: center;  
+ color:white
+}
+#apodImg{
+    width:80%;
+    display: block;
+    margin:0 auto;
+    margin-bottom: 20px;
+}
+
+
+#odForm .odFormContainer,
+#sunsetForm .ssFromContainer{
+    font-size:20px;
+    font-weight: 450;
+    color:white;
+    height:80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 900px;
+}
+
+#sunsetForm .ssFromContainer{
+    height: 130px;
+}
+
+#odForm #eventGetButton,
+#sunsetForm #sunsetGetButton,
+#apodGetButton{
+    display:block;
+    margin:30px auto;
+    height:40px;
+    width: 100px;
+    font-size: 16px;
+    border:none;
+    border-radius: 40px;
+    transition: .7s ease;
+    transition-property: color, background-color;
+
+}
+
+#apodForm h2,
+#odForm h2,
+#sunsetForm h2{
+    margin-top: 80px;
+}
+
+#eventResults,
+#sunsetResults{
+    color:white;
+    text-align: center;
+    font-size:20px;
+}
+#sunsetResults{
+    margin-bottom:200px;
+}
+#eventResults h3,
+#sunsetResults h3{
+     color:red;
+}
+
+
+#eventResults a,
+#sunsetResults a{
+    color:white;
+}
+
+#odForm #eventGetButton:hover,
+#sunsetForm #sunsetGetButton:hover,
+#apodGetButton:hover{
+    color:white;
+    background-color:cornflowerblue;
+}
+
+
+#footer .footer {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    position:absolute;
+    position:fixed;
+    bottom:0;
+    height: 15vh;
+    margin-top:100px;
+    left:0;
+    right:0;
+    color: white;
+    font-size:20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#footer .footer a,
+#footer .footer p{
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    padding:0;
+    margin:10px;
+   
+}
+
+#footer .footer a{
+    color:turquoise;
+}
+
+@media screen and (min-width: 800px) {
+    #odForm .odFormContainer,
+    #sunsetForm .ssFromContainer{
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin:0 auto;
+    
+}
+    #apodForm h2,
+    #odForm h2,
+    #sunsetForm h2{
+        font-size:28px;
+    }
+
+    #odForm .odFormContainer,
+    #sunsetForm .ssFromContainer{
+        font-size: 22px;
+    }
+
+    #odForm #eventGetButton,
+    #sunsetForm #sunsetGetButton,
+    #apodGetButton{
+        height: 40px;
+        width:80px;
+    }
+
+    #odForm select,
+    #sunsetForm select,
+    #sunsetForm input{
+        height: 25px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #apodImg{
+        width:60%;
+    }
+
+    #imageDate,
+    #imageTitle {
+        font-size: 24px;
+    }
+    #imageExplanation{
+        display: block;
+        font-size: 18px;
+    }
+
+    #odForm .odFormContainer,
+    #sunsetForm .ssFromContainer{
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin:0 auto;
+    
+}
+    #apodForm h2,
+    #odForm h2,
+    #sunsetForm h2{
+        font-size:34px;
+    }
+
+    #odForm .odFormContainer,
+    #sunsetForm .ssFromContainer{
+        font-size: 26px;
+    }
+
+    #odForm #eventGetButton,
+    #sunsetForm #sunsetGetButton,
+    #apodGetButton{
+        height: 50px;
+        width:100px;
+    }
+
+    #odForm select,
+    #sunsetForm select,
+    #sunsetForm input{
+        height: 35px;
+    }
+}
+
+
+
